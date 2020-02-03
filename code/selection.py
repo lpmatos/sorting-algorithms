@@ -39,7 +39,7 @@ def selection_sort_alternative(array: List) -> NoReturn:
         # Seta o índice do menor elemento como o índice do elemento atual.
         index_menor = index_atual
         # Pecorre o array na posição do index_atual, que está ignorando o último elemento, até o final.
-        for index_proximo, _ in enumerate(array):
+        for index_proximo, _ in enumerate(array[index_atual::]):
             # Checa se o elemento da lista total é menor do que o elemento do índice menor.
             if _ < array[index_menor]:
                 # Se for, setamos o índice menor.
