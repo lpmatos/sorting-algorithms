@@ -32,10 +32,26 @@ def selection_sort(array: List) -> NoReturn:
         array[atual], array[menor] = array[menor], array[atual]
 
 # =============================================================================
+
+def selection_sort_alternative(array: List) -> NoReturn:
+    # Percorremos o array ignorando o último elemento.
+    for index_atual, _ in enumerate(array[:-1]):
+        # Seta o índice do menor elemento como o índice do elemento atual.
+        index_menor = index_atual
+        # Pecorre o array na posição do index_atual, que está ignorando o último elemento, até o final.
+        for index_proximo, _ in enumerate(array):
+            # Checa se o elemento da lista total é menor do que o elemento do índice menor.
+            if _ < array[index_menor]:
+                # Se for, setamos o índice menor.
+                index_menor = index_proximo
+        # Trocamos.
+        array[index_atual], array[index_menor] = array[index_menor], array[index_atual]
+
+# =============================================================================
 # MAIN
 # =============================================================================
 
 if __name__ == "__main__":
-    array =  [64, 34, 25, 12, 22, 11, 90]
-    selection_sort(array)
+    array =  [5, 3, 1]
+    selection_sort_alternative(array)
     print(array)
