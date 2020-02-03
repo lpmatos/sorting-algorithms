@@ -1,7 +1,7 @@
 Sorting Algorithms
 ============
 
-This is a **Base Project** to study **Sorting Algorithms**
+This is a **Base Project** to study **Sorting Algorithms** and put some implementations about this topic.
 
 ## Copyright (c)
 
@@ -12,7 +12,7 @@ Lucca Pessoa da Silva Matos (c) - 2019
 To use this repository you need to make a **git clone**:
 
 ```bash
-git clone --depth 1 <GIT_URL> -b master
+git clone --depth 1 https://github.com/lpmatos/sorting-algorithms.git -b master
 ```
 
 This will give access on your **local machine** to this project.
@@ -20,7 +20,7 @@ This will give access on your **local machine** to this project.
 ## Organization
 
 * **.github** we have template to create **Actions** on **GitHub**.
-* **/code** in this folder we have a **Ruby** script to analyse the **Lynis** log file.
+* **/code** in this folder we have a **Python** scripts.
 * **/docs** is the directory where we have all documentation files.
 * **CHANGELOG.md** is a versioning file usend to control development versions.
 * **docker-compose.yml** is the **Docker** container orchestrator.
@@ -32,7 +32,6 @@ This will give access on your **local machine** to this project.
 ## Pre-Requisites
 
 * **Python**.
-* **Shell Script**.
 * **Docker**.
 * **docker-compose**.
 
@@ -236,7 +235,6 @@ Hey!! If you like this project or if you find some bugs feel free to contact me 
 * **Email**: luccapsm@gmail.com
 
 * **Linkedin**: www.linkedin.com/in/lucca-pessoa-4abb71138/
-
 
 ## Versioning
 
