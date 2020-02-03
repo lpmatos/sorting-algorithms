@@ -2,6 +2,12 @@
 
 All important changes to this project will be added to this file! This changelog will be based on [Keep a change log](http://keepachangelog.com/)
 
+## 1.0.1
+
+### Added
+- **Python** base sort using the function **sorted**.
+- **Insertion** implementation.
+
 ## 1.0.0
 
 ### Added
