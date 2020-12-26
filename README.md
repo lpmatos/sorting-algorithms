@@ -10,7 +10,6 @@
 
 <p align="left">
   <a href="#-description">Description</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-topics">Topics</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-features">Features</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-how-to-contribute">How to contribute</a>
 </p>
@@ -33,9 +32,9 @@ Os algoritmos de classificação são formas que nós temos de organizar uma sé
 
 Existem vários algoritmos dessa classe que podemos utilizar, aqui iremos abordar:
 
-* **Bubble Sort**
+* [Bubble Sort](./docs/bubble-sort.md)
 * **Insertion Sort**
-* **Selection Sort**
+* [Selection Sort](./docs/selection-sort.md)
 * **Shell Sort**
 * **Quick Sort**
 * **Heap Sort**
@@ -50,10 +49,6 @@ A table with algorithms and its complexity.
   <img alt="gitlab" src="./docs/assets/complexity.png" width="500px" float="center"/>
 </p>
 
-## ➤ Topics
-
-* [Bubble Sort](./docs/bubble-sort.md)
-* [Selection Sort](./docs/selection-sort.md)
 ## ➤ Features
 
 * Default gitignore and editorconfig.
