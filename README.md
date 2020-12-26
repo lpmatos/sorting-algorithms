@@ -1,245 +1,94 @@
-Sorting Algorithms
-============
+<p align="center">
+  <img alt="gitlab" src="https://embed-ssl.wistia.com/deliveries/70d6f4e10e2badb5ef394f00c17ad2bc1c14f6e7.jpg" width="250px" float="center"/>
+</p>
 
-This is a **Base Project** to study **Sorting Algorithms** and put some implementations about this topic.
+<h1 align="center">Welcome to sorting algorithms repository</h1>
 
-## Copyright (c)
+> Implementation of some sorting algorithms
 
-Lucca Pessoa da Silva Matos (c) - 2019
+## ➤ Menu
 
-## Getting Started
+<p align="left">
+  <a href="#-description">Description</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-topics">Topics</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-features">Features</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-how-to-contribute">How to contribute</a>
+</p>
 
-To use this repository you need to make a **git clone**:
+## ➤ Getting Started
 
-```bash
-git clone --depth 1 https://github.com/lpmatos/sorting-algorithms.git -b master
-```
+If you want use this repository you need to make a **git clone**:
 
-This will give access on your **local machine** to this project.
 
-## Organization
+>
+> 1. git clone --depth 1 https://github.com/lpmatos/sorting-algorithms.git -b master
+>
 
-* **.github** we have template to create **Actions** on **GitHub**.
-* **/code** in this folder we have a **Python** scripts.
-* **/docs** is the directory where we have all documentation files.
-* **CHANGELOG.md** is a versioning file usend to control development versions.
-* **docker-compose.yml** is the **Docker** container orchestrator.
-* **Dockerfile** is a file used to set up your **Docker** environment.
-* **Makefile** is a file containing a set of automation policies.
-* **README.md** is an optional file. A human-readable **README** file.
-* The files found in the project root are support files to others contexts.
 
-## Pre-Requisites
+This will give access on your **local machine**.
 
-* **Python**.
-* **Docker**.
-* **docker-compose**.
+## ➤ Description
 
-## Containers
+Template description.
 
-It's set at [docker-compose.yml](docker-compose.yml) the **Containers** required for application execution.
+## ➤ Topics
 
-**Container** | **Description** | **Dockerfile**
-:---: | :---: | :---:
-sorting | **Sorting Algorithms Environment** | [Dockerfile](app/Dockerfile)
+* [Bubble Sort](./docs/bubble-sort.md)
+* [Selection Sort](./docs/selection-sort.md)
+## ➤ Features
 
-## Structure
+* Default gitignore and editorconfig.
+* GitLeaks file.
+* Semantic Release file.
+* NPM modules automation.
+  * Commitlint - Conventional Commits.
+  * Git Hooks with Husky.
 
-**Components** | **Description** | **Tool**
-:---: | :---: | :---:
-sorting | **Sorting Algorithms** | [Python](https://python.org.br/)
+## ➤ How to contribute
 
-## Running pip
-
-The **pip** is a command line program. When you install **pip**, a **pip** command is added to your system, which can be run from the command prompt as follows:
-
-```bash
-$ pip <pip arguments>
-```
-
-If you cannot run the pip command directly (possibly because the location where it was installed isn't on your operating systems **PATH**) then you can run **pip** via the **Python** interpreter:
-
-```bash
-$ python -m pip <pip arguments>
-```
-
-On **Windows**, the py launcher can be used:
-
-```bash
-$ py -m pip <pip arguments>
-```
-
-## Installing Packages
-
-### Pip
-
-The **pip** supports installing from **PyPI**, version control, local projects, and directly from distribution files.
-
-The most common scenario is to install from **PyPI** using Requirement specifiers.
-
-```bash
-$ pip install SomePackage            # latest version
-$ pip install SomePackage==1.0.4     # specific version
-$ pip install somePackage>=1.0.4     # minimum version
-```
-
-### Pipenv
-
-**Pipenv** is a tool that aims to bring the best of all packaging worlds (bundler, composer, npm, cargo, yarn, etc.) to the **Python** world. **Windows** is a firsts-class citizen, in our world.
-
-It automatically creates and manages a **virtualenv** for your projects, as well as adds/removes packages from your **Pipfile** as you install/uninstall packages. It also generates the ever-important **Pipfile.lock**, which is used to produce deterministic builds.
-
-#### Installation
-
-```bash
-$ pip install pipenv
-```
-
-#### Create a TOML Spec Pipfile
-
-You can build the **Pipfile** to specifying:
-
-* Versions of a Package.
-* Versions of **Python**.
-* Basic configurations.
-
-#### Pipenv Workflow
-
-Clone/create project repository:
-
-```bash
-$ cd myproject
-```
-
-Install from **Pipfile**, if there is one:
-
-```bash
-$ pipenv install
-```
-
-Install from **Pipfile** dev:
-
-```bash
-$ pipenv install --dev
-```
-
-## Requirement File
-
-**Requirement File** are files containing a list of items to be installed using **pip** install like so:
-
-```bash
-$ pip install -r requirements.txt
-```
-
-Logically, a **Requirement File** is just a list of **pip** install arguments placed in a file. Note that you should not rely on the items in the file being installed by **pip** in any particular order.
-
-## Docker
-
-### Build
-
-To **Build** the image:
-
-```
-docker image build -t <IMAGE_NAME> -f <PATH_DOCKERFILE> <PATH_CONTEXT_DOCKERFILE>
-```
-
-or
-
-```
-docker image build -t <IMAGE_NAME> . (This context)
-```
-
-Explain:
-
-* **IMAGE_NAME**:
-    * Image **Name/Tag**.
-* **PATH_DOCKERFILE**:
-    * **Dockerfile** location.
-    * Where is the full path to **Dockerfile** located?
-* **PATH_CONTEXT_DOCKERFILE**:
-    * **Dockerfile** context.
-    * Where is the **Dockerfile**?
-
-#### Run the Container with the image
-
-* Running the **Container** in **Detached mode**/**Background**:
-
-```
-docker container run -d -p <LOCAL_PORT:CONTAINER_PORT> <IMAGE_NAME>
-```
-
-* Running the **Container** in **Interactive mode**:
-
-```
-docker container run -it --rm --name <CONTAINER_NAME> -p <LOCAL_PORT:CONTAINER_PORT> <IMAGE_NAME>
-```
-
-### Basic Commands
-
-* Windows
-
-```
-winpty docker.exe run -it --rm <IMAGE_NAME> <COMMAND>
-```
-
-* Showing all local images:
-
-```
-docker images
-```
-
-or
-
-```
-docker image ls
-```
-
-* Showing all Active or Inactive **Containers**:
-
-```
-docker ps -a
-```
-
-* Showing all Active **Containers**:
-
-```
-docker ps
-```
-
-* Entering an Active **Container**:
-
-```
-docker exec -it <CONTAINER_ID> <COMMAND>
-```
-
-## How to contribute
-
-1. Make a **Fork**.
-
-2. Follow the project organization.
-
-3. Add the file to the appropriate level folder - If the folder does not exist, create according to the standard.
-
-4. Make the **Commit**.
-
-5. Open a **Pull Request**.
-
-6. Wait for your pull request to be accepted.. 🚀
+>
+> 1. Make a **Fork**.
+> 2. Follow the project organization.
+> 3. Add the file to the appropriate level folder - If the folder does not exist, create according to the standard.
+> 4. Make the **Commit**.
+> 5. Open a **Pull Request**.
+> 6. Wait for your pull request to be accepted.. 🚀
+>
 
 Remember: There is no bad code, there are different views/versions of solving the same problem. 😊
 
-## Contacts
+## ➤ Add to git and push
+
+You must send the project to your GitHub after the modifications
+
+>
+> 1. git add -f .
+> 2. git commit -m "Added - Fixing somethings"
+> 3. git push origin master
+>
+
+## ➤ Versioning
+
+- We currently do not have a CHANGELOG.md generated.
+
+## ➤ Author
+
+👤 **Lucca Pessoa**
 
 Hey!! If you like this project or if you find some bugs feel free to contact me in my channels:
 
-* **Email**: luccapsm@gmail.com
+>
+> * Email: luccapsm@gmail.com
+> * Website: https://github.com/lpmatos
+> * Github: [@lpmatos](https://github.com/lpmatos)
+> * GitLab: [@lpmatos](https://gitlab.com/lpmatos)
+> * LinkedIn: [@luccapessoa](https://www.linkedin.com/in/luccapessoa/)
+>
 
-* **Linkedin**: www.linkedin.com/in/lucca-pessoa-4abb71138/
+## ➤ Show your support
 
-## Versioning
+Give a ⭐️ if this project helped you!
 
-- [CHANGELOG](CHANGELOG.md)
+---
 
-## Project Status
-
-* In production
+_This README was generated with ❤️ by me_
