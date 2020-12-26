@@ -47,7 +47,7 @@ Existem vários algoritmos dessa classe que podemos utilizar, aqui iremos aborda
 A table with algorithms and its complexity.
 
 <p align="center">
-  <img alt="gitlab" src="./docs/assets/complexity.png" width="250px" float="center"/>
+  <img alt="gitlab" src="./docs/assets/complexity.png" width="500px" float="center"/>
 </p>
 
 ## ➤ Topics
