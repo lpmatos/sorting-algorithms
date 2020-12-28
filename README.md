@@ -28,7 +28,7 @@ This will give access on your **local machine**.
 
 ## ➤ Description
 
-Os algoritmos de classificação são formas que nós temos de organizar uma série de dados. Utilizamos esses algoritmos para pegar dados confusos, organizá-los e torná-los mais fáceis de serem utilizados. Ter um conhecimento deles é essencial para um forte entendimento da Ciência da Computação, que vem se tornando algo cada vez mais crítico em um mundo de coisas pré-definidas. Nesse estudo iremos nos concentrar na velocidade, uso, vantagem e desvantagem de algoritmos de classificação específicos.
+Os algoritmos de ordenação são formas de organizar conteúdos de estruturas de dados. Utilizamos eles para pegar dados confusos, organizá-los e torná-los mais fáceis de serem utilizados. Ter o conhecimento desses algoritmos é essencial para um forte entendimento da Ciência da Computação, que vem se tornando algo cada vez mais crítico em um mundo de coisas pré-definidas. Nesse estudo iremos nos concentrar na velocidade, uso, vantagem e desvantagem de algoritmos de classificação específicos.
 
 Existem vários algoritmos dessa classe que podemos utilizar, aqui iremos abordar:
 

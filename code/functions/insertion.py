@@ -1,13 +1,7 @@
 # -*- coding: utf-8 -*-
 
-"""Documentation file base.py."""
-
-# =============================================================================
-# IMPORTS
-# =============================================================================
-
 try:
-    from typing import List
+    from typing import List, NoReturn
 except ImportError as error:
     print("""
     The module {0} is missing.
@@ -17,8 +11,12 @@ except ImportError as error:
 # FUNCTIONS
 # =============================================================================
 
-def base_sort(array: List) -> List:
-    return sorted(array, reverse=False)
+def insertion_sort(array: List) -> NoReturn:
+    for index_atual, elemento_atual in enumerate(array):
+        while index_atual != 0 and array[index_atual - 1] > elemento_atual:
+            array[index_atual] = array[index_atual - 1]
+            index_atual -= 1
+        array[index_atual] = elemento_atual
 
 # =============================================================================
 # MAIN
@@ -26,4 +24,5 @@ def base_sort(array: List) -> List:
 
 if __name__ == "__main__":
     array =  [22, 46, 50, 17, 5, 23, 1, 82, 3]
-    print(base_sort(array))
+    insertion_sort(array)
+    print(array)

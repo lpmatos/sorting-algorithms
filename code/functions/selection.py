@@ -1,11 +1,5 @@
 # -*- coding: utf-8 -*-
 
-"""Documentation file selection.py."""
-
-# =============================================================================
-# IMPORTS
-# =============================================================================
-
 try:
     from typing import List, NoReturn
 except ImportError as error:

@@ -1,0 +1,2 @@
+class Sort:
+  pass
